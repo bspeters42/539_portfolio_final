@@ -1,0 +1,532 @@
+/* 
+Color Palette
+dk blue:    005482
+med. blue:  6492b2
+lt blue:    92c8e0 
+
+lt orange:      ffa500
+med orange:     f07522
+dk orange-red:  dc3826
+
+bckgrnd sand:   e7e5df
+
+lt gray:    bcbec0
+med gray:   616162
+dk gray:    333333
+
+*/
+  
+  
+  
+  
+  /* CHANGE THE SETTINGS FOR SKIP LOOK */
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+
+
+a:focus{
+    border: 3px solid #ffa500;
+    font-weight: bold;
+}
+a:hover{    
+    font-weight: bold;
+}
+
+/* !!!!!!!!!!!! */
+header{ 
+    background-color: #6492B2;
+}
+
+header h1{
+    text-align: center;
+}
+
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #005482;
+} 
+
+.nav_item{
+    padding: 20px;
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: white;    
+
+}
+
+#current_page {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+/* !!!!!!!!!!!! */
+
+
+img {
+    width: 140px;
+}
+
+
+
+/* !!!!!!!!!!!!!!!! */
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 16pt;
+    line-height: 1.2em;
+    background-color: #e7e5df;
+    /* background-image: url('...');   GOES HERE IF NEEDED */
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 1.0em;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+
+p {
+    padding: 5px;
+    text-align: left;
+    /* width: 85%; */
+    margin: auto;
+}
+
+.float_l {float: left; margin-right: 20px;}
+.float_r {float: right; margin-left: 20px;}
+
+
+/* Background color classes */
+
+.ltbluebckgrnd { background-color: #92c8e0;}
+.mdorngbckgrnd { background-color: #f07522;}
+
+
+
+
+/* !!!!! image borders !!!!! */
+
+.ltgrayborder {border: 10px solid #bcbec0;}
+.mdgrayborder {border: 10px solid #616162;}
+.dkgrayborder {border: 10px solid #333333;}
+
+
+.ltblueborder {border: 10px solid #92c8e0;}
+.mdblueborder {border: 10px solid #6492b2;}
+.dkblueborder {border: 10px solid #005482;}
+
+.ltorngborder {border: 10px solid #ffa500;}
+.mdorngborder {border: 10px solid #f07522;}
+.dkorngborder {border: 10px solid #dc3826;}
+
+
+
+
+
+
+
+
+
+
+/* !!!!!cross-stitch gallery!!!!!!!! */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: repeat(12, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: flex-start;
+    margin: 0px auto;
+}
+
+.cs_chickens{ grid-column: 1/2; grid-row: 1/2; }
+.cs_mayan_numbers{ grid-column: 2/3; grid-row: 1/3; }
+.cs_peacock_kit{ grid-row: 2/4; grid-column: 1/2; }
+.cs_damaskpattern{ grid-row: 3/4; grid-column: 2/3; }
+.cs_ecs_sampler{ grid-row: 4/5; grid-column: 1/3; 
+    min-height: 160px;}
+.cs_ecs_sampler img {width: 320px;}
+.cs_mondrian{ grid-row: 5/6; grid-column: 1/2; }
+.cs_flowervase{ grid-row: 5/7; grid-column: 2/3; }
+.cs_stork{ grid-row: 6/7; grid-column: 1/2; }
+.cs_queenofhearts{ grid-row: 7/9; grid-column: 1/3; }
+.cs_queenofhearts img{width: 350px;}
+.cs_ykb{ grid-row: 9/10; grid-column: 1/2; }
+.cs_camelrider{ grid-row: 9/10; grid-column: 2/3;}
+.cs_swallow2{ grid-row: 10/11; grid-column: 1/3; }
+.cs_swallow2 img{width: 350px;}
+
+/* END of Cross-stitch gallery image classes */
+
+
+/* crochet grid */
+/* .grid2 {
+    display: grid;
+    grid-template-columns: 180px auto 180px;
+    grid-template-rows: 40px 300px 310px 60px 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.crocheting {grid-row: 1; grid-column: 1/4}
+.cb_p { grid-row: 2; grid-column: 1/3;}
+.crochet_bag{ grid-row: 2; grid-column: 3/4; width: 140px; margin-right: 15px;}
+
+.crochet_waterbottle{ grid-row: 3; grid-column: 1/2; width: 120px; }
+.cwb_p { grid-row: 3; grid-column: 2/4; }
+.sewing {grid-row: 4; grid-column: 1/4;}
+.sewingp  {grid-row: 5; grid-column: 1/3;}
+.swdicebag {grid-row: 5; grid-column: 3/4;} */
+
+
+
+#formborder{
+    margin: 50px;
+    border:  groove darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+}
+#formcontents{
+    padding: 10px;
+}
+
+footer {
+    background-color: #005482;
+    color: white;
+    padding: 50 px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+footer p{
+    padding: 10px;
+}
+
+
+.parallax {
+    background-image: url("../images/Western_Union.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#formplate {
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+
+@media screen and (min-width: 650px){ 
+    img {
+        width: 200px;
+    }
+    
+    .dicetray1 {margin: 0px 5px 0px 30px;}
+    .dicetray2 {margin: 0px 30px 0px 5px;}
+
+    /* crochet grid */
+    .grid2 {
+        display: grid;
+        grid-template-columns: 150px 2fr 150px;
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 5px;
+        justify-content: start;
+    }
+    
+    .cb_p { grid-row: 1; grid-column: 1/3;}
+    .crochet_bag{ grid-row: 1; grid-column: 3/4; width: 150px; margin-right: 15px;}
+
+    .crochet_waterbottle{ grid-row: 2; grid-column: 1/2; width: 150px; }
+    .cwb_p { grid-row: 2; grid-column: 2/4; }
+    
+
+    .grid1 {
+        display: grid;
+        margin: 0px 10px;
+        grid-template-columns: 210px 210px 210px;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+    }
+    .grid1 img{width: 200px;}
+
+    .cs_chickens{ grid-row: 1; grid-column: 1; }
+    .cs_camelrider{ grid-row: 1; grid-column: 2;}
+    .cs_stork{ grid-row: 1; grid-column: 3; }
+    
+    
+    .cs_peacock_kit{ grid-row: 2; grid-column: 1; }
+    .cs_mayan_numbers{ grid-row: 2; grid-column: 2; }
+    .cs_flowervase{ grid-row: 2; grid-column: 3; }
+    
+    .cs_ecs_sampler{ grid-row: 3; grid-column: 1/4; }
+    .cs_ecs_sampler img {width: 640px;}
+
+    .cs_damaskpattern{ grid-row: 4; grid-column: 1; }
+    .cs_mondrian{ grid-row: 4; grid-column: 2; }
+    .cs_ykb{ grid-row: 4; grid-column: 3; }
+    
+
+    
+    .cs_queenofhearts{ grid-row: 5; grid-column: 1/4; }
+    .cs_queenofhearts img { width: 640px;}
+    .cs_swallow2{ grid-row: 6; grid-column: 1/4; }
+    .cs_swallow2 img{width: 640px;}
+    
+    .cards {margin-bottom: 30px;}
+
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 210px auto 210px;
+        grid-template-rows: 40px 300px 310px 60px 500px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .crocheting {grid-row: 1; grid-column: 1/4}
+    .cb_p { grid-row: 2; grid-column: 1/3;}
+    .crochet_bag{ grid-row: 2; grid-column: 3/4; width: 260px; margin-right: 15px;}
+
+    .crochet_waterbottle{ grid-row: 3; grid-column: 1/2; width: 200px; }
+    .cwb_p { grid-row: 3; grid-column: 2/4; }
+    .sewing {grid-row: 4; grid-column: 1/4;}
+    .sewingp  {grid-row: 5; grid-column: 1/3;}
+    .swdicebag {grid-row: 5; grid-column: 3/4;}
+
+
+    /* add revisions to above code here  */
+}
+
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+
+
+
+
+
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+
+@media screen and (min-width: 800px){ 
+    img {
+        width: 260px;
+    }
+
+    .current_projects {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 40px 180px 115px 225px 40px 270px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-right: 20px;
+    }
+    
+    .playingcard    {grid-row: 1; grid-column: 1/4;}
+    .pcard          {grid-row: 2; grid-column: 3; margin-right: 15px; width: 270px;}
+    .pcardp1        {grid-row: 2; grid-column: 1/3;}
+    .pcardp2        {grid-row: 3; grid-column: 1/4;}
+    .pcardpattern   {grid-row: 4; grid-column: 1/2; width: 270px;}
+    .pcardp3        {grid-row: 4; grid-column: 2/4;}
+    .knittedsocks   {grid-row: 5; grid-column: 1/4;}
+    .ksocksp        {grid-row: 6; grid-column: 1/3; }
+    .ksocks         {grid-row: 6; grid-column: 3; width: 270px; margin-bottom: 30px; }
+
+
+    .dicetray1 {margin: 0px;}
+    .dicetray2 {margin: 0px;}
+
+    .woodgrid {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 20px 300px 20px 300px 20px 300px 20px 240px 300px ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .woodgrid img {width: 270px;}
+    div.woodgrid h2{padding: 0px;}
+    .compostbin     {grid-row: 1;}
+    .compostbin     {grid-row: 2; grid-column: 1/2;}
+    .compostp       {grid-row: 2; grid-column: 2/4;}
+    
+    .workbench      {grid-row: 3; grid-column: 3;}
+    .benchp         {grid-row: 4; grid-column: 1/3;}
+    .bench          {grid-row: 4; grid-column: 3/4;}
+    
+    .ladder_plank   {grid-row: 5;}
+    .ladderplank    {grid-row: 6; grid-column: 1/2;}
+    .ladderp        {grid-row: 6; grid-column: 2/4;}
+    
+    .dicetrays      {grid-row: 7; grid-column: 3;}
+    .dicetray1p     {grid-row: 8; grid-column: 1/3;}
+    .dicetray1      {grid-row: 8; grid-column: 3/4;}
+    
+    .dicetray2      {grid-row: 9; grid-column: 1/2;}
+    .dicetray2p     {grid-row: 9; grid-column: 2/4;}
+    
+    .grid1 {
+        display: grid;
+        margin: 0px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .grid1 img{width: 220px;}
+    .cs_chickens{ grid-row: 1; grid-column: 1; }
+    .cs_camelrider{ grid-row: 1; grid-column: 2;}
+    .cs_stork{ grid-row: 1; grid-column: 3; }
+    
+    
+    .cs_peacock_kit{ grid-row: 2; grid-column: 1; }
+    .cs_mayan_numbers{ grid-row: 2; grid-column: 2; }
+    .cs_flowervase{ grid-row: 2; grid-column: 3; }
+    
+    .cs_ecs_sampler{ grid-row: 3; grid-column: 1/4; }
+    .cs_ecs_sampler img {width: 700px;}
+
+    .cs_damaskpattern{ grid-row: 4; grid-column: 1; }
+    .cs_mondrian{ grid-row: 4; grid-column: 2; }
+    .cs_ykb{ grid-row: 4; grid-column: 3; }
+    
+
+    .cs_queenofhearts{ grid-row: 5; grid-column: 1/4; }
+    .cs_queenofhearts img { width: 700px;}
+    .cs_swallow2{ grid-row: 6; grid-column: 1/4; }
+    .cs_swallow2 img{width: 700px;}
+    
+
+
+     /* crochet grid */
+     .grid2 {
+        display: grid;
+        grid-template-columns: 280px auto 280px;
+        grid-template-rows: 40px 300px 310px 60px 400px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .crocheting {grid-row: 1; grid-column: 1/4}
+    .cb_p { grid-row: 2; grid-column: 1/3;}
+    .crochet_bag{ grid-row: 2; grid-column: 3/4; width: 260px; margin-right: 15px;}
+
+    .crochet_waterbottle{ grid-row: 3; grid-column: 1/2; width: 200px; }
+    .cwb_p { grid-row: 3; grid-column: 2/4; }
+    .sewing {grid-row: 4; grid-column: 1/4;}
+    .sewingp  {grid-row: 5; grid-column: 1/3;}
+    .swdicebag {grid-row: 5; grid-column: 3/4;}
+
+    .paper_grid {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 40px 270px 300px 20px 370px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-right: 20px;
+    }
+    
+    .origami   {grid-row: 1; grid-column: 1/4;}
+    .origami1   {margin-top: 15px; grid-row: 2; grid-column: 3;}
+    .origami_p1 {grid-row: 2; grid-column: 1/3;}
+    .origami2   {grid-row: 3; grid-column: 1/2;}
+    .origami_p2 {grid-row: 3; grid-column: 2/4;}
+    .cards_and_books {grid-row: 4; grid-column: 1/4;}
+    .cards_books_p  {margin-top: 20px; grid-row: 5; grid-column: 1/3;}
+    .cards_books    {margin-top: 20px; width: 250px; grid-row: 5; grid-column: 3;}
+
+
+
+    /* add revisions to above code here  */
+}
+
+
+
+/*   CSS TO FOR REDUCED MOTION PREFERENCES - little iffy here */
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    a.skip {
+        -webkit-transition: none;
+        transition: none;
+        top: 10px;
+    }
+
+    .parallax{
+        background-attachment: scroll;
+    }
+    
+  
+}
